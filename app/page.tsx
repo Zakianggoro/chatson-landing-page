@@ -667,6 +667,27 @@ export default function LandingPage() {
           </div>
         </div>
       </footer>
+
+      {/* ================= FLOATING CHAT BUBBLE ================= */}
+      <a
+        href="https://chatson.my.id"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-8 right-8 z-50 w-16 h-16 rounded-full bg-[#081D5A] flex items-center justify-center shadow-2xl hover:scale-110 hover:bg-blue-700 transition-all duration-300"
+      >
+        <svg
+          width="28"
+          height="28"
+          fill="none"
+          stroke="white"
+          strokeWidth="2"
+          viewBox="0 0 24 24"
+        >
+          <path d="M8 10h8M8 14h4" />
+          <path d="M21 15a2 2 0 0 1-2 2H8l-5 5V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+        </svg>
+      </a>
+
     </main>
   );
 }
