@@ -24,41 +24,41 @@ import {
 
 const teamMembers = [
   {
-    name: "Muhammad Rifdinar Luthfi",
-    nim: "235150700010",
-    role: "Technical Lead & Engineer",
+    name: "Muhammad Rafindran Luthfi",
+    nim: "235150200111063",
+    role: "Technical Lead & Integrator",
     image: "/team/rifdinar.png",
     description:
-      "Mengembangkan backend, workflow AI, integrasi sistem, dan manajemen API.",
+      "Mengimplementasikan database, retrieval system, dan integrasi komponen AI.",
   },
   {
-    name: "Naufal Prasida",
-    nim: "235150700102",
+    name: "Naufal Prasidha",
+    nim: "235150401111026",
     role: "Data & Dashboard Analyst",
     image: "/team/naufal.png",
     description:
-      "Mengolah data, analisis performa sistem, dan penyusunan dashboard.",
+      "Mengembangkan logging system, dashboard analitik, dan evaluasi performa chatbot.",
   },
   {
-    name: "Muhammad Hidayan",
-    nim: "235150700172",
+    name: "Muhammad Hadyan",
+    nim: "235150407111023",
     role: "Knowledge & Documentation Specialist",
     image: "/team/hidayan.png",
-    description: "Mengelola knowledge base dan dokumentasi sistem.",
+    description: "Menyusun knowledge base, kurasi FAQ, serta memastikan kualitas informasi yang digunakan chatbot.",
   },
   {
-    name: "Atha Zidan Syahzada",
-    nim: "235150700190",
+    name: "Atha Zaydan Shahzada",
+    nim: "235150401111023",
     role: "Project Manager & Business Analyst",
     image: "/team/zidan.png",
-    description: "Mengatur kebutuhan stakeholder dan pengembangan proyek.",
+    description: "Mengelola kebutuhan stakeholder, perancangan proses bisnis, workflow n8n, dan strategi implementasi sistem.",
   },
   {
     name: "Muhammad Zaki Anggoro",
-    nim: "235150700198",
+    nim: "235150207111004",
     role: "Frontend & UI Engineer",
     image: "/team/zaki.png",
-    description: "Mengembangkan antarmuka dan pengalaman pengguna aplikasi.",
+    description: "Mengembangkan backend service serta integrasi AI model dengan sistem chatbot.",
   },
 ];
 
