@@ -405,7 +405,7 @@ export default function LandingPage() {
           transition={{ duration: 0.8 }}
           className="max-w-7xl mx-auto"
         >
-          <div className="grid lg:grid-cols-[0.9fr_1.2fr] gap-8">
+          <div className="grid lg:grid-cols-[0.9fr_1.2fr] gap-8 items-center">
             {/* LEFT SIDE */}
             <div className="space-y-8">
               {/* LATAR BELAKANG */}
@@ -496,11 +496,11 @@ export default function LandingPage() {
 
             {/* RIGHT SIDE — Solusi yang Ditawarkan */}
             <div className="bg-[#eef3fa] rounded-3xl p-8">
-              <h2 className="text-center text-4xl font-bold mb-10">
+              <h2 className="text-center text-4xl font-bold mb-8">
                 Solusi yang Ditawarkan
               </h2>
 
-              <div className="grid md:grid-cols-2 gap-5">
+              <div className="grid grid-cols-2 gap-4">
                 {solutions.map((item, index) => (
                   <motion.div
                     key={item.title}
@@ -509,18 +509,17 @@ export default function LandingPage() {
                     viewport={{ once: false }}
                     transition={{ delay: index * 0.1, duration: 0.5 }}
                     whileHover={{ y: -6, scale: 1.02 }}
-                    className="bg-white rounded-2xl p-6 shadow-md border-l-4 border-blue-500"
+                    className="bg-white rounded-2xl p-5 shadow-sm border border-slate-100 flex flex-col"
                   >
-                    {/* Icon + Title row — sesuai design */}
-                    <div className="flex items-center gap-2 mb-3">
-                      <div className="w-8 h-8 rounded-md bg-blue-50 flex items-center justify-center flex-shrink-0">
+                    <div className="flex items-center gap-2 mb-2">
+                      <div className="w-7 h-7 rounded-md bg-blue-50 flex items-center justify-center flex-shrink-0">
                         {item.icon}
                       </div>
-                      <h3 className="font-bold text-sm text-blue-600">
+                      <h3 className="font-bold text-xs text-blue-600 leading-tight">
                         {item.title}
                       </h3>
                     </div>
-                    <p className="text-slate-600 text-sm leading-relaxed">
+                    <p className="text-slate-600 text-xs leading-relaxed">
                       {item.desc}
                     </p>
                   </motion.div>
