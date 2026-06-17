@@ -90,7 +90,7 @@ const teamMembers: TeamMember[] = [
   {
     name: "Muhammad Zaki Anggoro",
     nim: "235150207111004",
-    role: "Backend & UI Engineer",
+    role: "Frontend & UI Engineer",
     image: "/team/zaki.png",
     description:
       "Mengembangkan backend service serta integrasi AI model dengan sistem chatbot.",
