@@ -344,15 +344,6 @@ export default function LandingPage() {
                 </a>
               ))}
             </nav>
-
-            <button
-              className="px-5 py-2 rounded-full text-sm font-semibold text-white transition-colors"
-              style={{ background: "var(--navy)" }}
-              onMouseEnter={(e) => (e.currentTarget.style.background = "var(--navy-mid)")}
-              onMouseLeave={(e) => (e.currentTarget.style.background = "var(--navy)")}
-            >
-              Login
-            </button>
           </div>
         </header>
 
