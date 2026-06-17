@@ -205,6 +205,34 @@ const smartSolutions: SolutionItem[] = [
   },
 ];
 
+const workflowSteps = [
+  {
+    title: "User",
+    desc: "Pertanyaan / Gambar",
+    color: "bg-slate-700",
+  },
+  {
+    title: "Query Understanding",
+    desc: "Gemini Vision + NLP",
+    color: "bg-blue-700",
+  },
+  {
+    title: "RAG Retrieval",
+    desc: "Qdrant Vector DB + Embedding",
+    color: "bg-violet-700",
+  },
+  {
+    title: "Knowledge Base Search",
+    desc: "FAQ & Dokumen Internal",
+    color: "bg-emerald-700",
+  },
+  {
+    title: "Response Generation",
+    desc: "AI Response Builder",
+    color: "bg-blue-700",
+  },
+];
+
 const capaianData: CapaianItem[] = [
   {
     icon: <Timer className="w-6 h-6 text-blue-600" />,
@@ -711,6 +739,89 @@ export default function LandingPage() {
                 Teknologi yang digunakan dalam membangun Smart Helpdesk Chatbot.
               </p>
             </div>
+
+            <div className="mt-14 mb-20">
+            <h3
+              className="font-grotesk text-[26px] font-bold text-center mb-10"
+              style={{ color: "var(--navy)" }}
+            >
+              Workflow Architecture
+            </h3>
+
+            <div className="max-w-[700px] mx-auto flex flex-col items-center">
+              {workflowSteps.map((step, index) => (
+                <div
+                  key={step.title}
+                  className="flex flex-col items-center w-full"
+                >
+                  <motion.div
+                    initial={{ opacity: 0, y: 25 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.1 }}
+                    className={`w-full max-w-[420px] rounded-2xl px-6 py-4 text-center text-white ${step.color}`}
+                  >
+                    <h4 className="font-bold text-sm">
+                      {step.title}
+                    </h4>
+
+                    <p className="text-xs text-white/80 mt-1">
+                      {step.desc}
+                    </p>
+                  </motion.div>
+
+                  {index < workflowSteps.length - 1 && (
+                    <div className="h-10 flex items-center">
+                      <div className="w-[2px] h-10 bg-slate-300 relative">
+                        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 text-slate-400">
+                          ↓
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              ))}
+
+              <div className="w-full mt-8 grid md:grid-cols-2 gap-5">
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  className="rounded-2xl border border-red-200 bg-red-50 p-5"
+                >
+                  <h4 className="font-bold text-red-700 text-sm">
+                    Confidence Rendah
+                  </h4>
+
+                  <p className="text-xs text-slate-600 mt-2">
+                    Tiket dibuat otomatis dan diteruskan ke helpdesk untuk penanganan lebih lanjut.
+                  </p>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  className="rounded-2xl border border-green-200 bg-green-50 p-5"
+                >
+                  <h4 className="font-bold text-green-700 text-sm">
+                    Confidence Tinggi
+                  </h4>
+
+                  <p className="text-xs text-slate-600 mt-2">
+                    Jawaban dikirim langsung kepada pengguna tanpa eskalasi.
+                  </p>
+                </motion.div>
+              </div>
+            </div>
+          </div>
+
+          <h3
+            className="font-grotesk text-[26px] font-bold text-center mb-10"
+            style={{ color: "var(--navy)" }}
+          >
+            Technology Stack
+          </h3>
 
             <div className="mt-12 flex flex-col gap-3">
               {archLayers.map((layer) => (
